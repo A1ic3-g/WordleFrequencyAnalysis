@@ -43,7 +43,6 @@ def main():
     result = [count(word) for word in df['word']]
     
     graph_data = pd.DataFrame.from_dict(letters, orient="index")
-    print (graph_data)
     fig = px.bar(graph_data)
     fig.show()
 
